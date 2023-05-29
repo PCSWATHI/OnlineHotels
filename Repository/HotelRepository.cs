@@ -20,11 +20,6 @@ namespace OnlineHotels.Repository
 
 
         }
-
-
-
-
-
         public IEnumerable<Hotel> GetAll()
         {
             return _dbContext.Hotels.ToList();
@@ -70,8 +65,6 @@ namespace OnlineHotels.Repository
                 _dbContext.SaveChanges();
             }
         }
-
-
         public void AddRooms(Room Rooms)
         {
 
@@ -80,11 +73,6 @@ namespace OnlineHotels.Repository
 
 
         }
-
-
-
-
-
         public IEnumerable<Room> GetAllRooms()
         {
             return _dbContext.Rooms.ToList();

@@ -82,7 +82,7 @@ namespace OnlineHotels.Controllers
                 var roomCount = _Context.Rooms
                     .Count(room => room.Hotels.HotelName == HotelName && room.FloorNumber == FloorNumber);
 
-                return Ok(string.Format("the numbers of rooms in a hotel{0} are {1}",HotelName,roomCount));
+                return Ok(string.Format("the numbers of rooms in a hotel {0} are {1}",HotelName,roomCount));
             }
             catch (Exception ex)
             {
